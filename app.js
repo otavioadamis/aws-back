@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const supabase = 
-    supabaseClient.createClient('https://minhaurl', 
-        'minhaAPIKey')
+    supabaseClient.createClient('url', 
+        'key')
 
 
 app.get('/products', async (req, res) => {
