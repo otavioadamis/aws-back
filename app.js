@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const supabase = 
-    supabaseClient.createClient('url', 
-        'key')
+    supabaseClient.createClient(' https://vgqonliootrqrkxyaiso.supabase.co', 
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZncW9ubGlvb3RycXJreHlhaXNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkzMDUxODAsImV4cCI6MjAxNDg4MTE4MH0.r_AusjzWkfj0cfJXkgAhwpxi2wtC0l63HYOpXXiy55U')
 
 
 app.get('/products', async (req, res) => {
